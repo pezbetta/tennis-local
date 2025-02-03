@@ -16,10 +16,9 @@
 </p>
 
 ## Usage
-1. `make up`
-2. visit `http://localhost:8666/v1/ping` for uvicorn server, or `http://localhost` for nginx server
-3. Backend, JSON based web API based on OpenAPI: `http://localhost/v1/`
-4. Automatic interactive documentation with Swagger UI (from the OpenAPI backend): `http://localhost/docs`
+1. `make up` to start the docker containers.
+2. Automatic interactive documentation with Swagger UI (from the OpenAPI backend): `http://127.0.0.1:8666/docs`
+3. The first time you will need to apply migration so the endpoints can work. You can do so with `make alembic-migrate`
 
 ## Backend local development, additional details
 
